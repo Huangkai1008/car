@@ -15,7 +15,12 @@ public class Car {
     /**
      * 车辆实体类
      */
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
     private @NonNull String name;
+
+    void setName(String name) {
+        this.name = name;
+    }
 }
